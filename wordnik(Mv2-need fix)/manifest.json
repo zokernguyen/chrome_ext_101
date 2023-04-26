@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "wordnik",
+  "version": "1.0.0",
+  "description": "Word definition ext Tutorial",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon.png"
+    },
+    "default_popup": "popup/index.html",
+    "default_title": "Looking for a definition?"
+  },
+  "content_security_policy": {
+    "extension_pages.script-src": ["self", "https://cdn.jsdelivr.net"],
+    "extension_pages.object-src": ["self"]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

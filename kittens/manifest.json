@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "kittens",
+  "version": "1.0.0",
+  "web_accessible_resources": [
+    {
+      "resources": ["pics/*.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["kitten.js"]
+    }
+  ]
+}

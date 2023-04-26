@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "sketcher",
+  "version": "1.0.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["lib/p5.js", "lib/p5.dom.js", "sketcher.js"]
+    }
+  ]
+}
