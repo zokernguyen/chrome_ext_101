@@ -6,8 +6,21 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage"],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "contextMenus",
+    "bookmarks",
+    "browsingData"
+  ],
   "action": {
     "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options/options.html"
 }

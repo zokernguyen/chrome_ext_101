@@ -2,11 +2,11 @@
   "manifest_version": 3,
   "name": "wordnik",
   "version": "1.0.0",
-  "description": "Word definition ext Tutorial",
+  "description": "https://thecodingtrain.com/challenges/84-word-definition-chrome-extension",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["lib/p5.js", "content.js"]
     }
   ],
   "action": {
@@ -16,11 +16,8 @@
     "default_popup": "popup/index.html",
     "default_title": "Looking for a definition?"
   },
-  "content_security_policy": {
-    "extension_pages.script-src": ["self", "https://cdn.jsdelivr.net"],
-    "extension_pages.object-src": ["self"]
-  },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "permissions": ["tabs", "activeTab", "scripting", "declarativeContent"]
 }

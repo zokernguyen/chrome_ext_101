@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Zextension",
+  "description": "A tool to search selected text on popular search engine.",
+  "version": "1.0.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["contextMenus", "tabs"],
+  "icons": {
+    "16": "icon.png"
+  }
+}

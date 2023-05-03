@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Global Entry Drops",
+  "description": "An extension that I don't know what is it used for...Just a tutorial, anyway.",
+  "version": "1.0.0",
+  "author": "Credit to JerryHacks",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "img/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage"]
+}
