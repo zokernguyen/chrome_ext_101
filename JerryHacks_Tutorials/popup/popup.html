@@ -22,7 +22,10 @@
       <div class="field">
         <label for="" class="label">Location ID</label>
         <div class="select">
-          <select id="locationId"></select>
+          <select id="locationId">
+            <option value="los_angeles">Los Angeles</option>
+            <option value="seattle">Seattle</option>
+          </select>
         </div>
       </div>
 
@@ -48,7 +51,11 @@
     </div>
 
     <div class="container m-3">
-      <button class="button is-danger is-fullwidth" id="endButton">Stop</button>
+      <button class="button is-danger is-fullwidth" id="stopButton">
+        Stop
+      </button>
     </div>
   </body>
+
+  <script src="popup.js"></script>
 </html>
