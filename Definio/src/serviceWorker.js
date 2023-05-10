@@ -1,1 +1,0 @@
-chrome.runtime.onInstalled.addListener((async t=>{try{if("install"===t.reason){const t="https://definio.org/welcome/install";chrome.tabs.create({url:t})}}catch(t){console.log(t)}})),chrome.runtime.setUninstallURL("https://definio.org/uninstall");
